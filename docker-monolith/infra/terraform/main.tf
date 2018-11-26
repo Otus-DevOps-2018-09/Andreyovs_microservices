@@ -8,7 +8,7 @@ provider "google" {
 resource "google_compute_instance" "app" {
   count        = "${var.count}"
   name         = "reddit-app-${count.index}"
-  machine_type = "g1-small"
+  machine_type = "n1-standard-1"
   zone         = "${var.zone}"
   tags         = ["reddit-app"]
 

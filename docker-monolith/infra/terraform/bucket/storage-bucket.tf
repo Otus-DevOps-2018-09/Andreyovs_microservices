@@ -6,7 +6,7 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "state_bucket" {
-  name = "bucket-andreyo"
+  name = "bucket-andreyo-docker"
 
   versioning {
     enabled = true

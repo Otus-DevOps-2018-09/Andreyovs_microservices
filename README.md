@@ -8,7 +8,6 @@ HW 13
 - :black_large_square: Outputted result of `docker images` to `docker-monolith/docker-1.log`
 - :large_orange_diamond: Described the difference of Docker image and container in `docker-monolith/docker-1.log`
 
-
 HW 14
 
 - :black_large_square: Created docker-host on GCP instance using `docker-machine` command
@@ -20,7 +19,7 @@ HW 14
 
 ## HW 15. Docker images & microservices
 
-## Completed tasks
+### Completed tasks
 
 - :black_large_square: Added three components to the `src` directory for Reddit application microservices
   - `post-py`

@@ -68,4 +68,5 @@ andreyovs/ui:1.0
 - :black_large_square: Made all tasks with network docker
 - :black_large_square: Made all tasks with docker-compose
 
-- :large_orange_diamond: use command docker-compose with key -p, --project-name NAME Specify an alternate project name (default: directory name) or use  COMPOSE_PROJECT_NAME environment variable relates to the -p flag.
+- :black_large_square: use command docker-compose with key -p, --project-name NAME Specify an alternate project name (default: directory name) or use  COMPOSE_PROJECT_NAME environment variable relates to the -p flag.
+- :large_orange_diamond: docker-compose.override.yml.example created

@@ -2,30 +2,37 @@ version: '3.3'
 services:
   post_db:
     image: mongo:3.2
+    env_file: .env
     volumes:
       - post_db:/data/db
     networks:
-      - reddit
+      - back_net
   ui:
+    env_file: .env
     build: ./ui
-    image: ${USERNAME}/ui:1.0
+    image: ${USERNAME}/ui:${UI_IMAGE_VERSION}
     ports:
-      - 9292:9292/tcp
+      - ${APP_PORT}:${APP_PORT}/tcp
     networks:
-      - reddit
+      - front_net
   post:
+    env_file: .env
     build: ./post-py
-    image: ${USERNAME}/post:1.0
+    image: ${USERNAME}/post:${POST_IMAGE_VERSION}
     networks:
-      - reddit
+      - back_net
+      - front_net
   comment:
+    env_file: .env
     build: ./comment
-    image: ${USERNAME}/comment:1.0
+    image: ${USERNAME}/comment:${COMMENT_IMAGE_VERSION}
     networks:
-      - reddit
+      - back_net
+      - front_net
 
 volumes:
   post_db:
 
 networks:
-  reddit:
+  back_net:
+  front_net:

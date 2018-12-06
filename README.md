@@ -60,3 +60,12 @@ docker run -d --network=reddit \
 andreyovs/ui:1.0
 
 - :large_orange_diamond: Created new images based on Linux Alpine  `post-py`, `comment`, and `ui` microservices. Files  stored ./docker-monolith/Dockerfile_*
+
+## HW 16. Docker Lans
+
+### Completed tasks
+
+- :black_large_square: Made all tasks with network docker
+- :black_large_square: Made all tasks with docker-compose
+
+- :large_orange_diamond: use command docker-compose with key -p, --project-name NAME Specify an alternate project name (default: directory name) or use  COMPOSE_PROJECT_NAME environment variable relates to the -p flag.

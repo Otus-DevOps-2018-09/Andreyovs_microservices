@@ -1,0 +1,4 @@
+---
+- import_playbook: dockerhost.yml
+- import_playbook: gitlab-ci.yml
+#- import_playbook: runners.yml

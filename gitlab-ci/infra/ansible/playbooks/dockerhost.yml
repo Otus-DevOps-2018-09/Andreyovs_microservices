@@ -1,0 +1,7 @@
+---
+- name: Install dockerhost
+  hosts: host
+  become: true
+
+  roles:
+    - dockerhost

@@ -87,4 +87,4 @@ andreyovs/ui:1.0
 
 - :large_orange_diamond: in build task implemented build image reddit via docker hub
 - :large_orange_diamond: created task on push branches to gitlab-ci exept master whre created docker-machine with reddit app image
-- created task "kill branch review"
+- :large_orange_diamond: created task "kill branch review"

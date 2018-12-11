@@ -78,3 +78,13 @@ andreyovs/ui:1.0
 
 - :large_orange_diamond: created ansible script for generation Gitlab CI runner (gitlab-ci/infra/ansible/playbooks/runners.yml).
 - :large_orange_diamond: made  Gitlab-CI integration with Slack
+
+## HW 18. GitLab CI-2
+
+- :black_large_square: extended pipeline dev,stage,prod;
+- :black_large_square: configured dynamic enevtory for  review for all branches except master;
+
+
+- :large_orange_diamond: in build task implemented build image reddit via docker hub
+- :large_orange_diamond: created task on push branches to gitlab-ci exept master whre created docker-machine with reddit app image
+- created task "kill branch review"

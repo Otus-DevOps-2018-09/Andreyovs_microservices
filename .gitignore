@@ -2,3 +2,5 @@
 .vscode
 !*.log
 .env
+docker-key.json
+secrets.tar.gz

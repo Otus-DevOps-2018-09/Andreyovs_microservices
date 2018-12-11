@@ -9,17 +9,30 @@ stages:
 
 variables:
   DATABASE_URL: 'mongodb://mongo/user_posts'
+  GCP_ZONE: europe-west1-b
 
 before_script:
-  - cd reddit
-  - bundle install
+  - export homedir=$(pwd)
+  #- cd reddit
+  #- bundle install
 
 build_job:
   stage: build
+  image: docker:latest
+  services:
+  - docker:dind
   script:
     - echo 'Building'
+    - cd $homedir
+    - docker login --username ${DOCKER_USER} --password ${DOCKER_PASS}
+    - docker build -t ${DOCKER_USER}/reddit:${CI_COMMIT_REF_NAME}-${CI_PIPELINE_ID} docker-monolith
+    - docker push ${DOCKER_USER}/reddit:${CI_COMMIT_REF_NAME}-${CI_PIPELINE_ID}
 
 test_unit_job:
+  before_script:
+  - export homedir=$(pwd)
+  - cd reddit
+  - bundle install
   stage: test
   services:
     - mongo:latest
@@ -34,7 +47,7 @@ test_integration_job:
 deploy_dev_job:
   stage: review
   script:
-    - echo 'Deplou'
+    - echo 'Deploy review'
   environment:
     name: dev
     url: http://dev.example.com

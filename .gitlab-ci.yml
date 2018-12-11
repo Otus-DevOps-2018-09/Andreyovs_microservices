@@ -25,8 +25,8 @@ build_job:
     - echo 'Building'
     - cd $homedir
     - docker login --username ${DOCKER_USER} --password ${DOCKER_PASS}
-    - docker build -t ${DOCKER_USER}/reddit:${CI_COMMIT_REF_NAME}-${CI_PIPELINE_ID} docker-monolith
-    - docker push ${DOCKER_USER}/reddit:${CI_COMMIT_REF_NAME}-${CI_PIPELINE_ID}
+    - sudo docker build -t ${DOCKER_USER}/reddit:${CI_COMMIT_REF_NAME}-${CI_PIPELINE_ID} docker-monolith
+    - sudo docker push ${DOCKER_USER}/reddit:${CI_COMMIT_REF_NAME}-${CI_PIPELINE_ID}
 
 test_unit_job:
   before_script:

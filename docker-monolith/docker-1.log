@@ -1,0 +1,9 @@
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
+andreyovs/ubuntu-tmp-file   latest              4cce963657a5        37 minutes ago      116MB
+ubuntu                      16.04               a51debf7e1eb        3 days ago          116MB
+hello-world                 latest              4ab4c602aa5e        2 months ago        1.84kB
+
+Having run the Docker commands "docker inspect <container_id>" and "docker inspect <image_id>"
+
+The Docker container adds a read-write layer on top of the static immutable image layers.
+

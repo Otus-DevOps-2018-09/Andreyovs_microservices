@@ -1,23 +1,28 @@
-FROM alpine:3.4
+FROM alpine:3.7
 
-WORKDIR /app
-COPY Gemfile* /app/
+ENV APP_HOME /app
+RUN mkdir $APP_HOME
+WORKDIR $APP_HOME
+ADD Gemfile* $APP_HOME/
 
-RUN \
-    apk update \
-    && apk upgrade \
-    && apk add --no-cache --virtual build-dependencies ruby-dev build-base \
-    && apk add --no-cache ruby ruby-bundler \
-    && bundle config --global silence_root_warning 1 \
+RUN apk --update add --no-cache \
+    ruby \
+    ruby-dev \
+    build-base \
+    ruby-bundler \
     && bundle install \
-    && apk del build-dependencies
+    && apk del \
+    ruby-dev \
+    build-base \
+    ruby-bundler \
+    && rm -rf /usr/lib/ruby/gems/*/cache/* \
+          /var/cache/apk/* \
+          /tmp/* \
+          /var/tmp/* 
 
-COPY . /app
+ADD . $APP_HOME
 
 ENV COMMENT_DATABASE_HOST comment_db
 ENV COMMENT_DATABASE comments
-
-ENV COMMENT_SERVICE_HOST comment
-ENV COMMENT_SERVICE_PORT 9292
 
 CMD ["puma"]

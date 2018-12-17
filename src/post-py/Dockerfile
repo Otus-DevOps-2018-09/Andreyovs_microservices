@@ -1,11 +1,20 @@
-FROM python:3.6.0-alpine
+FROM alpine:latest
 
 WORKDIR /app
-ADD . /app
+COPY requirements.txt /app
 
-RUN pip install -r /app/requirements.txt
+RUN \
+    apk update \
+    && apk upgrade \
+    && apk add --no-cache --virtual build-dependencies python-dev build-base \
+    && apk add --no-cache python3 \
+    && pip3 install flask pymongo \
+    && pip3 install -r requirements.txt \
+    && apk del build-dependencies
+
+COPY . /app
 
 ENV POST_DATABASE_HOST post_db
 ENV POST_DATABASE posts
 
-ENTRYPOINT ["python3", "post_app.py"]
+CMD [ "python3", "post_app.py" ]

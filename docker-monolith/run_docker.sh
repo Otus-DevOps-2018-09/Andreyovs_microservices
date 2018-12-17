@@ -1,4 +1,5 @@
 #!/bin/bash
+eval $(docker-machine env docker-host)
 docker kill $(docker ps -q)
 docker network create reddit
 docker volume create reddit_db

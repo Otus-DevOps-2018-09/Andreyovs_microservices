@@ -1,7 +1,18 @@
 #!/usr/bin/env bash
+eval $(docker-machine env docker-host)
 
-/usr/bin/mongod --fork --logpath /var/log/mongod.log --config /etc/mongodb.conf
+docker volume create reddit_db
 
-source /reddit/db_config
+docker kill $(docker ps -q)
 
-cd /reddit && puma || exit
+docker run -d --network=reddit --network-alias=post_db \
+--network-alias=comment_db -v reddit_db:/data/db mongo:latest
+
+docker run -d --network=reddit \
+--network-alias=post andreyovs/post:latest
+
+docker run -d --network=reddit \
+--network-alias=comment andreyovs/comment:latest
+
+docker run -d --network=reddit \
+-p 9292:9292 andreyovs/ui:latest

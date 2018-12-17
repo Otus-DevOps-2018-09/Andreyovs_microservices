@@ -1,20 +1,20 @@
-FROM alpine:latest
+FROM alpine:3.7
 
 WORKDIR /app
-COPY Gemfile* /app/
+COPY requirements.txt /app
 
 RUN \
     apk update \
     && apk upgrade \
-    && apk add --no-cache --virtual build-dependencies ruby-dev build-base \
-    && apk add --no-cache ruby ruby-bundler \
-    && bundle config --global silence_root_warning 1 \
-    && bundle install \
+    && apk add --no-cache --virtual build-dependencies python-dev build-base \
+    && apk add --no-cache python3 \
+    && pip3 install flask pymongo \
+    && pip3 install -r requirements.txt \
     && apk del build-dependencies
 
 COPY . /app
 
-ENV COMMENT_DATABASE_HOST comment_db
-ENV COMMENT_DATABASE comments
+ENV POST_DATABASE_HOST post_db
+ENV POST_DATABASE posts
 
-CMD ["puma"]
+CMD [ "python3", "post_app.py" ]

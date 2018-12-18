@@ -1,6 +1,9 @@
 .editorconfig
 .vscode
 !*.log
+
+.env
+
 # Terraform
 *.tfstate
 *.tfstate.*
@@ -17,3 +20,4 @@ variables.json
 
 dockerhost
 dockerhost.pub
+

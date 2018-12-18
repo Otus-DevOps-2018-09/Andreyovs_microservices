@@ -8,7 +8,6 @@ HW 13
 - :black_large_square: Outputted result of `docker images` to `docker-monolith/docker-1.log`
 - :large_orange_diamond: Described the difference of Docker image and container in `docker-monolith/docker-1.log`
 
-
 HW 14
 
 - :black_large_square: Created docker-host on GCP instance using `docker-machine` command
@@ -20,7 +19,7 @@ HW 14
 
 ## HW 15. Docker images & microservices
 
-## Completed tasks
+### Completed tasks
 
 - :black_large_square: Added three components to the `src` directory for Reddit application microservices
   - `post-py`
@@ -61,3 +60,13 @@ docker run -d --network=reddit \
 andreyovs/ui:1.0
 
 - :large_orange_diamond: Created new images based on Linux Alpine  `post-py`, `comment`, and `ui` microservices. Files  stored ./docker-monolith/Dockerfile_*
+
+## HW 16. Docker Lans
+
+### Completed tasks
+
+- :black_large_square: Made all tasks with network docker
+- :black_large_square: Made all tasks with docker-compose
+
+- :black_large_square: use command docker-compose with key -p, --project-name NAME Specify an alternate project name (default: directory name) or use  COMPOSE_PROJECT_NAME environment variable relates to the -p flag.
+- :large_orange_diamond: docker-compose.override.yml.example created

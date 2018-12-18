@@ -16,7 +16,7 @@ variables.json
 dockerhost
 dockerhost.pub
 
-#docker compose
+#docker-compose
 .env
 docker-compose.override.yml
 vault.key

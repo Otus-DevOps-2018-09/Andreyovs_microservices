@@ -1,0 +1,4 @@
+---
+# vars file for gitlab-ci-runners
+gitlabci_token: -YvWLkZx9sy1avsFr-e2
+runners_count: 5

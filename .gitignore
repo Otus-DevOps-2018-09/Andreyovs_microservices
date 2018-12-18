@@ -1,4 +1,23 @@
 .editorconfig
 .vscode
 !*.log
+
 .env
+
+# Terraform
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+.terraform/
+
+#ansible
+*.retry
+
+#packer
+variables.json
+
+dockerhost
+dockerhost.pub
+

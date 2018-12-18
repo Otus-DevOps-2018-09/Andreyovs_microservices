@@ -80,6 +80,7 @@ andreyovs/ui:1.0
 - :large_orange_diamond: created ansible script for generation Gitlab CI runner (gitlab-ci/infra/ansible/playbooks/runners.yml).
 - :large_orange_diamond: made  Gitlab-CI integration with Slack
 
+
 ## HW 18. GitLab CI-2
 
 - :black_large_square: extended pipeline dev,stage,prod;
@@ -98,5 +99,6 @@ andreyovs/ui:1.0
 - :large_orange_diamond: created docker image mongodb_exporter (percona)
 - :large_orange_diamond: Blackbox exporter used from prometheus
 - :large_orange_diamond:  created Makefile script
+
 
 

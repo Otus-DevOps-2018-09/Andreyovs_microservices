@@ -91,6 +91,7 @@ andreyovs/ui:1.0
 - :large_orange_diamond: created task on push branches to gitlab-ci exept master whre created docker-machine with reddit app image
 - :large_orange_diamond: created task "kill branch review"
 
+
 ## HW 19 Monitoring-1
 
 - :black_large_square: prometheus created docker-image

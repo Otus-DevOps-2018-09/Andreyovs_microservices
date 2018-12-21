@@ -98,3 +98,12 @@ andreyovs/ui:1.0
 - :large_orange_diamond: Blackbox exporter used from prometheus
 - :large_orange_diamond:  created Makefile script
 
+## HW 20 Monitoring-2
+
+- :black_large_square: created and mounted docker images: cAdvisor, Grafana, AlertManger
+- :black_large_square:  created grafana dashboards
+- :black_large_square:  configured alert integration
+
+- :large_orange_diamond:  Makefile have been updated
+- :large_orange_diamond: prometheus have been configured for monitoring native docker methrics
+- :large_orange_diamond: email integration hve been configured via alert manager

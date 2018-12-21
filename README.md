@@ -105,5 +105,5 @@ andreyovs/ui:1.0
 - :black_large_square:  configured alert integration
 
 - :large_orange_diamond:  Makefile have been updated
-- :large_orange_diamond: prometheus have been configured for monitoring native docker methrics
-- :large_orange_diamond: email integration hve been configured via alert manager
+- :large_orange_diamond: prometheus have been configured for monitoring native docker metrics
+- :large_orange_diamond: email integration have been configured via alert manager

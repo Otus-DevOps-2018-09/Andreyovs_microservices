@@ -92,3 +92,14 @@ andreyovs/ui:1.0
 - :large_orange_diamond: created task "kill branch review"
 
 
+## HW 19 Monitoring-1
+
+- :black_large_square: prometheus created docker-image
+
+
+- :large_orange_diamond: created docker image mongodb_exporter (percona)
+- :large_orange_diamond: Blackbox exporter used from prometheus
+- :large_orange_diamond:  created Makefile script
+
+
+

@@ -1,12 +1,3 @@
-.editorconfig
-.vscode
-!*.log
-
-.env
-
-docker-key.json
-secrets.tar.gz
-
 
 # Terraform
 *.tfstate
@@ -22,6 +13,27 @@ secrets.tar.gz
 #packer
 variables.json
 
+#ssh keys
 dockerhost
 dockerhost.pub
+
+
+#docker-compose
+.env
+docker-compose.override.yml
+vault.key
+
+#GCP creds
+secrets.tar.gz
+
+#VS CODE
+.editorconfig
+.vscode
+!*.log
+.env
+
+# Docker keys
+docker-key.json
+
+
 

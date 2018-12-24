@@ -71,7 +71,6 @@ andreyovs/ui:1.0
 - :black_large_square: use command docker-compose with key -p, --project-name NAME Specify an alternate project name (default: directory name) or use  COMPOSE_PROJECT_NAME environment variable relates to the -p flag.
 - :large_orange_diamond: docker-compose.override.yml.example created
 
-
 ## HW 17. GitLab Ci
 
 - :black_large_square: Creted  Terraform , Ansible autodeploy scripts  GitLab CI gitlab-ci/infra/;
@@ -79,7 +78,6 @@ andreyovs/ui:1.0
 
 - :large_orange_diamond: created ansible script for generation Gitlab CI runner (gitlab-ci/infra/ansible/playbooks/runners.yml).
 - :large_orange_diamond: made  Gitlab-CI integration with Slack
-
 
 ## HW 18. GitLab CI-2
 
@@ -91,7 +89,6 @@ andreyovs/ui:1.0
 - :large_orange_diamond: created task on push branches to gitlab-ci exept master whre created docker-machine with reddit app image
 - :large_orange_diamond: created task "kill branch review"
 
-
 ## HW 19 Monitoring-1
 
 - :black_large_square: prometheus created docker-image
@@ -101,5 +98,12 @@ andreyovs/ui:1.0
 - :large_orange_diamond: Blackbox exporter used from prometheus
 - :large_orange_diamond:  created Makefile script
 
+## HW 20 Monitoring-2
 
+- :black_large_square: created and mounted docker images: cAdvisor, Grafana, AlertManger
+- :black_large_square:  created grafana dashboards
+- :black_large_square:  configured alert integration
 
+- :large_orange_diamond:  Makefile have been updated
+- :large_orange_diamond: prometheus have been configured for monitoring native docker metrics
+- :large_orange_diamond: email integration have been configured via alert manager

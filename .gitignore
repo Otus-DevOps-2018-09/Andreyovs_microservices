@@ -1,4 +1,3 @@
-
 # Terraform
 *.tfstate
 *.tfstate.*
@@ -17,7 +16,6 @@ variables.json
 dockerhost
 dockerhost.pub
 
-
 #docker-compose
 .env
 docker-compose.override.yml
@@ -34,6 +32,3 @@ secrets.tar.gz
 
 # Docker keys
 docker-key.json
-
-
-

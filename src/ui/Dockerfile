@@ -1,18 +1,20 @@
-FROM alpine:3.4
+FROM alpine:3.7
 
-WORKDIR /app
-COPY Gemfile* /app/
+ENV APP_HOME /app
 
-RUN \
-    apk update \
-    && apk upgrade \
-    && apk add --no-cache --virtual build-dependencies ruby-dev build-base \
-    && apk add --no-cache ruby ruby-bundler \
-    && bundle config --global silence_root_warning 1 \
-    && bundle install \
-    && apk del build-dependencies
+RUN mkdir "$APP_HOME"
 
-COPY . /app
+WORKDIR $APP_HOME
+COPY Gemfile* $APP_HOME/
+COPY . $APP_HOME
+
+RUN apk update \
+    && apk add --no-cache build-base ruby ruby-bundler ruby-dev ruby-json \
+    && gem install bundler --no-ri --no-rdoc \
+    && gem cleanup \
+    && bundle install --without development test \
+    && apk del build-base ruby-dev \
+    && rm -rf /usr/lib/ruby/gems/*/cache/* /var/cache/apk/* /tmp/* /var/tmp/*
 
 ENV POST_SERVICE_HOST post
 ENV POST_SERVICE_PORT 5000

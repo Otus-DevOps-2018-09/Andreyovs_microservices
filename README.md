@@ -107,3 +107,11 @@ andreyovs/ui:1.0
 - :large_orange_diamond:  Makefile have been updated
 - :large_orange_diamond: prometheus have been configured for monitoring native docker metrics
 - :large_orange_diamond: email integration have been configured via alert manager
+
+## HW 21 Tracing & Logging
+- :black_large_square: Services have been updated for integration with fluentd, zipkin
+- :black_large_square: docker-compose-logging.yml file have been created for deployment  (fluentd, ELK, zipkin)
+- :black_large_square: configured fluentd, ELK
+
+
+- :large_orange_diamond: Filter params  fluentd have been added parsing UI logs code

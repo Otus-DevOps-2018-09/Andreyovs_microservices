@@ -115,3 +115,11 @@ andreyovs/ui:1.0
 
 
 - :large_orange_diamond: Filter params  fluentd have been added parsing UI logs code
+
+
+## HW 22 Kubernates
+- :black_large_square: Manifest files have been created (ui, post, comment, mongo)
+- :black_large_square: K8S  has been configured via hard-way
+
+- :large_orange_diamond: Ansible playbook has been created for k8s installation
+

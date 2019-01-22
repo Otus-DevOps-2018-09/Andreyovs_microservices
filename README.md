@@ -116,6 +116,7 @@ andreyovs/ui:1.0
 
 - :large_orange_diamond: Filter params  fluentd have been added parsing UI logs code
 
+
 ## HW 22 Kubernates
 - :black_large_square: Manifest files have been created (ui, post, comment, mongo)
 - :black_large_square: K8S  has been configured via hard-way
@@ -123,9 +124,19 @@ andreyovs/ui:1.0
 
 - :large_orange_diamond: Ansible playbook has been created for k8s installation
 
+
 ## HW 23 Kubernates
+- :black_large_square: Manifest files have been created (ui, post, comment, mongo)
+- :black_large_square: K8S  has been configured via hard-way
+
+- :large_orange_diamond: Ansible playbook has been created for k8s installation
+
+
+## HW 24 Kubernates
 - :black_large_square: Manifest files have been created (post, ui, comment, mongo), services and namespaces
 - :black_large_square: Reddit app has been deployed on  minikube & GKE
 
 - :large_orange_diamond: terraform deployment kubernates script has been created
 - :large_orange_diamond: Manifest files have been created for kubernetes dashboard
+
+

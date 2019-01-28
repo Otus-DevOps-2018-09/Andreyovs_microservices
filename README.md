@@ -129,3 +129,8 @@ andreyovs/ui:1.0
 
 - :large_orange_diamond: terraform deployment kubernates script has been created
 - :large_orange_diamond: Manifest files have been created for kubernetes dashboard
+
+## HW 24 Kubernates
+- :black_large_square: Manifest files have been created (Ingress controller,TLS, Load Balancing, network policies, storages)
+
+- :large_orange_diamond: has been created manifest (secret) with TLS-cert

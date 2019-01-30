@@ -134,3 +134,8 @@ andreyovs/ui:1.0
 - :black_large_square: Manifest files have been created (Ingress controller,TLS, Load Balancing, network policies, storages)
 
 - :large_orange_diamond: has been created manifest (secret) with TLS-cert
+
+## HW 25 Kubernates
+- installed & configured Helm + Tiller
+- Charts manifests have been created
+- Gitlab-CI has been deployed by Helm:

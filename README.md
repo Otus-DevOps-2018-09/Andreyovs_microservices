@@ -136,6 +136,6 @@ andreyovs/ui:1.0
 - :large_orange_diamond: has been created manifest (secret) with TLS-cert
 
 ## HW 25 Kubernates
-- installed & configured Helm + Tiller
-- Charts manifests have been created
-- Gitlab-CI has been deployed by Helm:
+ :black_large_square: installed & configured Helm + Tiller
+ :black_large_square: Charts manifests have been created
+ :black_large_square: Gitlab-CI has been deployed by Helm

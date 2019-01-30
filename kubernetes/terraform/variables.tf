@@ -25,10 +25,10 @@ variable disk_size {
 
 variable initial_node_count {
   description = "Initial Node Count"
-  default     = 2
+  default     = 3
 }
 
 variable gke_version {
   description = "GKE Version"
-  default     = "1.10.9-gke.5"
+  default     = "1.10.11-gke.1"
 }

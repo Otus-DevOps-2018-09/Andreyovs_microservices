@@ -3,6 +3,6 @@ name: mongodb
 version: 1.0.0
 description: OTUS reddit application MONGO
 maintainers:
-  - name: Aleskey Ermolaev
+  - name: Andrey Ovsyannikov
     email: my@gmail.com
 appVersion: 1.0

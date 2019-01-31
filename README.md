@@ -139,3 +139,5 @@ andreyovs/ui:1.0
 - :black_large_square: installed & configured Helm + Tiller
 - :black_large_square: Charts manifests have been created
 - :black_large_square: Gitlab-CI has been deployed by Helm
+
+

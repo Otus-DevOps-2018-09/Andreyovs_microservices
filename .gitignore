@@ -37,4 +37,6 @@ docker-key.json
 tls.key
 tls.crt
 
+
 kubernetes/Gitlab_ci/*
+

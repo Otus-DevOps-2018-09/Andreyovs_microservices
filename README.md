@@ -140,7 +140,7 @@ andreyovs/ui:1.0
 - :black_large_square: Charts manifests have been created
 - :black_large_square: Gitlab-CI has been deployed by Helm
 
-## HW 25 Kubernates
+## HW 26 Kubernates
 - :black_large_square: Prometheus have been installed by helm in K8S. Logs gave been gathered for  ui, post, comment.
 - :black_large_square: grafana has been deployed . Dashboards have been configured for all env
 - :black_large_square: EFK have been installed & configured for log monnitoring
